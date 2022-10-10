@@ -8,29 +8,41 @@
 
   <style>
 
+    * {
+      border: thin red solid;
+    }
+
     body {
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: #16161a; 
+      display: flex;
+      justify-content: center;
     }
     
     .name {
       color:#fffffe;
+      justify-content: center;
     }
 
     .social-icons {
       color:#94a1b2;
       text-decoration: none;
+      justify-content: space-around;
     }
 
     .link {
       background-color: #94a1b2;
       color:#7f5af0;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
 
     .link a {
-    color: #fffffe;
-    text-decoration: none;
+      color: #fffffe;
+      text-decoration: none;
+      flex-grow: 1;
     }
 
     .banner-image {
@@ -38,6 +50,11 @@
     height: 128px;
     object-fit: cover;
     border-radius: 128px;
+   }
+
+   .banner {
+    display: flex;
+    justify-content: center;
    }
 
   .thumbnail {
@@ -50,6 +67,10 @@
   .items {
     display:flex;
     flex-direction: column;
+    gap: 30px;
+    flex-grow: 1;
+    max-width: 640px;
+    /* align-items: center; */
   }
 
   </style>
